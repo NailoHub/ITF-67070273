@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page ตัวอย่าง</title>
+    <link rel="stylesheet" href="hi.css">
+</head>
 <body>
-<style>
-.note {
-    font-size: 120%;
-    color: red;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #1d1a1a;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(242, 242, 247, 0.8);
-  border: 1px solid rgba(7, 7, 7, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-a:link {
-  background-color: yellow;
-}
-a:visited {
-  background-color: cyan;
-}
-a:hover {
-  background-color: lightgreen;
-}
-a:active {
-  background-color: hotpink;
-}
-</style>
-<nav>
-<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">CLICK ME!</a> |
-</nav>
-<button type="button" onclick="alert('WHY U CLICK ME!')">NO ME!</button>
-<div class="grid-container">
-    <div class="grid-item"><h1>ITF <span class="note">67070273</span> LAB</h1></div>
-    <div class="grid-item"><p>This is my <span class="note">WORK</span> lab.</p></div>
-    <div class="grid-item"><img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></p></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+        <h1>Welcome To Our Website</h1>
+        <p>67070273</p>
+        <button onclick="alert('Why U Click Me!')">Dont Click</button>
+    </header>
+
+    <div class="content">
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>I'm 67070273</p>
+            <a><img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"/></a>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>contact</h2>
+            <p>หากคุณมีคำถาม ไม่สามารถติดต่อเราได้ที่:</p>
+            <p>Email: <a href="mailto:67070273@kmitl.ac.th">67070273@kmitl.ac.th</a></p>
+        </section>
     </div>
+
+    <footer class="footer">
+        <p>Social Media</p>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+        <p>&copy; ทำได้เเล้วว</p>
+    </footer>
 </body>
 </html>
