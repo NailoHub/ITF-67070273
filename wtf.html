@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
 <body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+<style>
+.note {
+    font-size: 120%;
+    color: red;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #1d1a1a;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(242, 242, 247, 0.8);
+  border: 1px solid rgba(7, 7, 7, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+a:link {
+  background-color: yellow;
+}
+a:visited {
+  background-color: cyan;
+}
+a:hover {
+  background-color: lightgreen;
+}
+a:active {
+  background-color: hotpink;
+}
+</style>
+<nav>
+<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">CLICK ME!</a> |
+</nav>
+<button type="button" onclick="alert('WHY U CLICK ME!')">NO ME!</button>
+<div class="grid-container">
+    <div class="grid-item"><h1>ITF <span class="note">67070273</span> LAB</h1></div>
+    <div class="grid-item"><p>This is my <span class="note">WORK</span> lab.</p></div>
+    <div class="grid-item"><img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></p></div>
+    </div>
 </body>
 </html>
